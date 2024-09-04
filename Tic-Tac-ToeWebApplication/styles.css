@@ -1,0 +1,68 @@
+body {
+    background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/feminine-backgrounds-picjumbo-premium-69.jpg?w=2210&quality=70'); /* Ensure this path is correct */
+    background-size: cover; /* Fixed dimensions */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #0b423b;
+    font-size: 45px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell.x {
+    color: #ff4c4c;
+}
+
+.cell.o {
+    color: #4c8cff;
+}
+
+.status-message {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}
